@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\A\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
+    "D:\\Teste\\firstAspnetcore\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "D:\\A\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+    "D:\\Teste\\firstAspnetcore\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\A\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "D:\\Teste\\firstAspnetcore\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "D:\\A\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "D:\\Teste\\firstAspnetcore\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "D:\\A\\HelloWorld\\HelloWorld\\obj\\",
+        "outputPath": "D:\\Teste\\firstAspnetcore\\HelloWorld\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.TypeScript.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.8.3, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"

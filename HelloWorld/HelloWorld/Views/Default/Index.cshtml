@@ -1,4 +1,61 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "HomePage";
     Layout = "~/Views/Share/_Layout.cshtml";
 }
+
+@section css{
+    <link href="~/views/Default/index.css?v=2" rel="stylesheet" />
+}
+
+@section js{
+    <script src="~/views/Default/index.js?v=2"></script>
+}
+
+<section class="section-bg wow fadeInUp">
+    <div class="container container-conteudo">
+
+        <div class="section-header">
+            <h3>Autenticação</h3>
+            <p>Utilize o formulário abaixo para entrar no sistema.</p>
+        </div>
+
+
+        <div class="form">
+            <div id="sendmessage"></div>
+            <div id="errormessage"></div>
+            <form role="form" class="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="usuario"
+                               class="form-control"
+                               id="name" placeholder="Nome de usuário" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password"
+                               class="form-control"
+                               name="senha" id="senha" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <input type="button"
+                           value="ENTRAR"
+                           id="btnEntrar"
+                           onclick="index.btnEntrarOnClick()" />
+                </div>
+                <div id="divMsg"></div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
